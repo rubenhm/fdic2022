@@ -1,0 +1,106 @@
+/* :root {
+    --r-background-color: #fff;
+    --r-main-font: Source Sans Pro, Helvetica, sans-serif;
+    --r-main-font-size: 42px;
+    --r-main-color: #222;
+    --r-block-margin: 20px;
+    --r-heading-margin: 0 0 20px 0;
+    --r-heading-font: Source Sans Pro, Helvetica, sans-serif;
+    --r-heading-color: #222;
+    --r-heading-line-height: 1.2;
+    --r-heading-letter-spacing: normal;
+    --r-heading-text-transform: none;
+    --r-heading-text-shadow: none;
+    --r-heading-font-weight: 600;
+    --r-heading1-text-shadow: none;
+    --r-heading1-size: 2.5em;
+    --r-heading2-size: 1.6em;
+    --r-heading3-size: 1.3em;
+    --r-heading4-size: 1em;
+    --r-code-font: monospace;
+    --r-link-color: #2a76dd;
+    --r-link-color-dark: #1a53a1;
+    --r-link-color-hover: #6ca0e8;
+    --r-selection-background-color: #98bdef;
+    --r-selection-color: #fff;
+} */
+
+.reveal {
+  font-size: 30px;
+}
+
+.reveal section h1, .reveal section h2, .reveal section h3, .reveal section h4 {
+	text-transform:none;
+	font-weight: 600;
+	padding: 45px;
+}
+
+/* .reveal .slides {
+  text-align: left;
+} */
+
+.reveal ul li { 
+  margin: 0; 
+  padding: 0.2em
+}
+
+.reveal ul li ul li {
+  margin-left: 0.5em;
+  margin-top: 0.2em;; 
+  padding: 0.1em
+}
+
+
+/*Font Awesome fonts*/
+.reveal i.fas {
+	font-family: 'Font Awesome 5 Free';
+	font-style: normal;
+}
+
+.reveal i.fab {
+	font-family: 'Font Awesome 5 Brands';
+	font-style: normal;
+}
+
+/*text content aligned left*/
+div.textcontent {
+  position: relative;
+  text-align: left;
+  padding-top: 5%;
+  font-size: 50px;
+}
+
+
+/*Big text*/
+.bigtext li {
+  position: relative;
+  text-align: left;
+  font-size: 100px;
+  color: #eee8d5;;
+}
+
+.reveal p.largetext {
+  position: relative;
+  text-align: center;
+  font-size: 100px;
+  color: #eee8d5;;
+}
+
+.reveal li.li-small {
+	font-size: 75%;
+	color: #4858bd;
+}
+
+.reveal ul.fa-ul {
+	list-style-type: none;
+}
+
+span.alert1 {
+  font-style: italic;
+  color: firebrick;
+}
+
+span.alert2 {
+  font-style: italic;
+  color: rgb(204, 101, 17);
+}

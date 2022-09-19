@@ -1,0 +1,133 @@
+---
+output: 
+  revealjs::revealjs_presentation:
+    theme: white
+    highlight: pygments
+    css: custom.css
+    center: true
+    transition: none
+    reveal_options:
+      slideNumber: 'c/t'
+      progress: true
+    fig_width: 8.0
+    fig_height: 4.0
+    fig_caption: true
+    self_contained: true
+    # reveal_plugins: ["notes", "chalkboard"]
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(scales)
+library(kableExtra)
+library(dplyr)
+library(captioner)
+library(stringr)
+source("code/cc_quality_assimilation_flow_presentation.R")
+```
+
+
+<!-- FontAwesome -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" crossorigin="anonymous">
+
+----
+
+## Labor-Market Quality <br> of Foreign-Born Workers <br> 2007-2017
+
+### Rubén Hernández Murillo
+
+FDIC — May 13, 2022
+
+(_Federal Reserve Bank of Cleveland **Economic Commentary**_, May 2020.)
+
+----
+
+#### Goals
+
++ The foreign-born are (**_very_**) important for the US economy
++ Data from the ACS on _labor-market quality_ between 2007 and 2017
++ Various measures of labor-market quality **improved** over the period
+  - Notable increases among Mexican-born workers
++ Why?
+  + Shift in the composition of the foreign-born
+    - Increase in immigration from Asia
+    - Precipitous decline in immigration from Mexico (*why?*)
+
+----
+
+### The foreign-born are very important
+
++ Most of the foreign-born population are working-age individuals
+  - The foreign-born represent almost 20% of the US workforce
++ The foreign-born population grew **2.5x** to **3.3x** **faster** than the US-born
+  - Overall US population grew 8.2%:
+    - 2.2% was growth in the _overall_ foreign-born population
+    - 6.1% was growth in the _overall_ US-born population
+  - Working-age US population grew 5.7%:
+    - 2.2% was growth in foreign-born **workers**
+    - 3.5% was growth in US-born **workers**
+
+----
+
+### Measures of labor-market quality
+
+<ul class="fa-ul">
+<li><span class = "fa-li"><i class="fas fa-book-reader"></i></span> Educational attainment</li>
+<li><span class = "fa-li"><i class="fas fa-comment-dots"></i></span>English proficiency</li>
+<li><span class = "fa-li"><i class="fas fa-money-bill-wave"></i></span>Earnings potential</li>
+</ul>
+
+----
+
+
+### Educational attainment by area of origin
+
+```{r, echo=FALSE}
+plot(plot.edu)
+```
+
+----
+
+### English proficiency by area of origin
+
+```{r echo=FALSE}
+plot(plot.eng)
+```
+
+----
+
+### Median annual earnings relative to <br> US-born workers by area of origin
+
+```{r echo=FALSE}
+plot(plot.earn)
+```
+
+----
+
+### Distribution of the recent foreign-born <br> by area of origin
+
+```{r echo=FALSE}
+plot(p.waob.shares.ff)
+```
+
+----
+
+### Border enforcement
+
+```{r echo=FALSE, fig.height=5.5}
+plot(grid.enforcement)
+```
+
+
+----
+
+### Conclusion
+
+- Measures of labor-market quality of foreign-born workers <br> **improved** during 2007-2017
+- Notable gains seem concentrated among immigrants from **Mexico**
+- The apparent increase in quality results from <br> a **shift in the distribution of immigrants**:
+  + Increased immigration from Asia
+  + A precipitous decline in immigration from Mexico
+- Factors behind the decline in immigration from Mexico:
+  - Increase in **border enforcement** over past two decades
+  - (Decrease in US demand for Mexican workers after 2008/9 recession)
